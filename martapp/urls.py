@@ -4,17 +4,16 @@ from django.urls import path
 from martapp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    
+    path('about/', views.about, name= 'about'),
 
-    path('about/', views.about),
+    path('contact/', views.contact, name = 'contact'),
 
-    path('contact/', views.contact),
+    path('', views.index, name= 'index'),
 
-    path('index/', views.index),
+    path('services/', views.services, name= 'services'),
 
-    path('services/', views.services),
-
-    path('prices/', views.prices),
+    path('prices/', views.prices, name= 'prices'),
     
     
 
