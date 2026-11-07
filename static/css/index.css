@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    font-size: 60px;
+}
+
+p{
+    font-weight: bold;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
