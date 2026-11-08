@@ -16,3 +16,6 @@ def services(request):
 
 def prices(request):
     return render(request, 'prices.html')
+
+def cntform(request):
+    return render(request, 'cntform.html')

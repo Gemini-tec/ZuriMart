@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Page</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/cntform.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Contact Form</h1>
+
+        <p class="stitle">Please enter your details: </p>
+
+        <form action="">
+            <p>Required fields are marked with an asterisk:</p>
+
+            <div class="row">
+                <label for="fname">*First name: </label>
+                <input type="text" id=" fname" required>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="lname">*Last name: </label>
+                <input type="text" id=" lname" required>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="email">*Email: </label>
+                <input type="email" id=" email" required>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="tel">Tel: </label>
+                <input type="tel" id="tel">
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="fax">Fax: </label>
+                <input type="number" id="fax">
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="mob">Mob: </label>
+                <input type="tel" id="mob">
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="dob">*Date of Birth: </label>
+                <input type="date" id="dob" required>
+            </div>
+            <br><br>
+
+            <fieldset>
+                <legend>Gender*</legend>
+
+                <input type="radio" id="male">
+                <label for="male">Male</label>
+                <br>
+
+                <input type="radio" id="female">
+                <label for="female">Female</label>
+                <br>
+
+                <input type="radio" id="non-binary">
+                <label for="non-binary">Non-binary</label>
+                <br>
+            </fieldset>
+            <br><br>
+
+            <label for="comment">Leave a comment: </label>
+            <br>
+
+            <textarea name="comment" id="comment"></textarea>
+            <br><br>
+
+            <button>submit</button>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

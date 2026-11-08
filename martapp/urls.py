@@ -14,7 +14,8 @@ urlpatterns = [
     path('services/', views.services, name= 'services'),
 
     path('prices/', views.prices, name= 'prices'),
-    
+
+    path('cntform/', views.cntform, name= 'cntform'),   
     
 
 ]
